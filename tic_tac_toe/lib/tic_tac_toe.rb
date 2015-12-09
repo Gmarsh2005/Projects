@@ -208,20 +208,20 @@ module TicTacToe
   end
 end
 
-# TicTacToe
-# playing = true
-# while playing
-#   round = TicTacToe::GameBoard
-#   puts "Welcome to tic-tac-toe! Return A to play hard mode or any other key to play 2-player."
-#   game_type = gets.chomp.upcase
-#   if game_type == "A"
-#     round.new.ai_game
-#   else
-#     round.new.run_game
-#   end
-#   puts "Return N to quit; enter any other key to play again."
-#   replay = gets.chomp.upcase
-#   if replay == "N"
-#     playing = false
-#   end
-# end
+TicTacToe
+playing = true
+while playing
+  round = TicTacToe::GameBoard
+  puts "Welcome to tic-tac-toe! Return A to play hard mode or any other key to play 2-player."
+  game_type = gets.chomp.upcase
+    if game_type == "A"
+      round.new.ai_game
+    else
+      round.new.run_game
+    end
+  puts "Return N to quit; enter any other key to play again."
+  replay = gets.chomp.upcase
+    if replay == "N"
+      playing = false
+    end
+end
